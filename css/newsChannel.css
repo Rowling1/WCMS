@@ -1,0 +1,58 @@
+.header{
+	margin-top: 51px;
+}
+.scrollNotice{
+	position: relative;
+	height: 30px;
+	overflow: hidden;
+	background-color: #FFFFFF;
+	border: 1px solid #428BCA;
+	border-radius: 5px;
+	padding:5px;
+	padding-left: 90px;
+	margin-bottom: 20px;
+}
+.scrollNotice ul,.scrollNotice ul li{
+	margin:0;
+	padding: 0;
+	list-style-type: none;
+}
+.scrollNotice ul li a{
+	text-decoration: none;
+	font: bold 15px "microsoft yahei";
+	color: #555555;
+}
+.scrollNotice #noticeTip{
+	position: absolute;
+	left: 0;
+	top:0;
+	height: 30px;
+	color: #FFFFFF;
+	font: bold 15px "microsoft yahei";
+	background: #428BCA;
+	padding: 5px 10px;
+
+}
+#hotNews ul a{
+	height: 40px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space:nowrap;/*规定段落中的文本不进行换行*/
+}
+#hotNews .badagetop3{
+	background-color: #337ab7;/*#C22222;*/
+}
+#ulPEOlatform .list-group-item{
+	padding: 28px 10px;
+}
+#ulPEOlatform .divPicText{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	height: 0px;
+	overflow: hidden;
+	background-color: #000000;
+	opacity: 0.7;
+	color:#ffffff;
+	font: 14px/25px "microsoft yahei";
+}

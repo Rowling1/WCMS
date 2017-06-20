@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>软件学院</title>
+	<!-- link rel="stylesheet" href="css/bootstrap.min.css"> -->
+	<script type="text/javascript" src="ckplayer6.8/ckplayer/ckplayer.js" charset="utf-8"></script>
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">  
+	<link rel="stylesheet" href="css/default.css">
+	<script src="js/jquery-3.1.1.min.js"></script>	
+	<!-- <script src="js/bootstrap.min.js"></script> -->
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!-- 定义一个页面居中容器，针对不同的设备终端，宽度不一样 -->
+	<!-- logo与站内搜索框 -->
+	<div class="container header">
+		<div class="row">
+			<div class="col-xs-12 col-sm-5">
+				<img src="img/logo.png" alt="泉州师范学院" class="img-responsive">
+			</div>
+			<div class="col-sm-7 col-xs-12" style="padding: 2.5% 0;">
+				<form action="#" id="frmSearch">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="请输入关键字进行站内检索">
+						<span class="input-group-btn">
+							<input type="submit" class="btn btn-default" value="搜索">
+						</span>
+					</div>
+				</form>
+			</div>	
+		</div>
+	</div>
+	<!-- 定义Bootstrap导航条组建容器，采用默认风格样式	 -->
+	<!-- 导航条 -->
+	<!-- 定义导航条内容居中容器 -->
+	<div class="navbar navbar-default" role="navigation">	
+		<div class="container">
+			<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<div class="navbar-header">
+				<a href="#" class="navbar-brand">软件学院</a>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar-main">
+				<ul class="nav navbar-nav">
+					<li><a href="#">首页</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">学院概况<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">学院简介</a></li>
+							<li><a href="#">学院领导</a></li>
+							<li><a href="#">组织机构</a></li>
+							<li><a href="#">专业设置</a></li>
+							<li><a href="#">师资力量</a></li>
+						</ul>
+					</li>
+					<li><a href="#">教育教学</a></li>
+					<li><a href="#">教学研究</a></li>
+					<li><a href="#">学生工作</a></li>
+					<li><a href="#">招生就业</a></li>
+					<li><a href="#">专业介绍</a></li>
+					<li><a href="#">党群工作</a></li>
+					<li><a href="#">院务公开</a></li>
+					<li><a href="#">关工委</a></li>
+					<li><a href="newsChannel.html">新闻资讯</a></li>
+				</ul>
+			</div>				
+		</div>	
+	</div>	
+	<!-- 内容 -->
+	<div class="container content">
+		<!--定义一行，在此行中定义了3列，列中存放内容-->
+		<div class="row">
+		 <!-- 通知公告 -->
+			<div class="col-xs-12 col-sm-4">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">
+							<a href="#" style="float: right;">更多..</a>
+							<span class="glyphicon glyphicon-volume-up"></span>
+							&nbsp;&nbsp;通知公告
+						</h3>
+					</div>
+					<ul class="list-group">
+						<li class="list-group-item">
+							<a href="#" target="_blank">泉州师范学院物信学院光子技术研究中心高精度测配色系统等设备采购的招标公告</a>
+						</li>
+						<li class="list-group-item">
+							<a href="#" target="_blank">泉州师范学院化工学院多用气体吸附仪采购的采购公告</a>
+						</li>
+						<li class="list-group-item">
+							<a href="#" target="_blank">泉州师范学院化工学院多用气体吸附仪采购的采购公告</a>
+						</li>
+					 </ul>
+				</div>
+			</div>
+			<!-- 图片新闻轮播 -->
+			<div class="col-xs-12 col-sm-5">
+				<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+					<!-- 轮播（Carousel）指标 -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+						<li data-target="#myCarousel" data-slide-to="3"></li>
+						<li data-target="#myCarousel" data-slide-to="4"></li>					</ol>   
+					<!-- 轮播（Carousel）项目 -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="img/news1.png" alt="First slide" height="220">
+						</div>
+						<div class="item">
+							<img src="img/news2.png" alt="Second slide" height="220">
+						</div>
+						<div class="item">
+							<img src="img/news3.png" alt="Third slide" height="220">
+						</div>
+						<div class="item">
+							<img src="img/news4.png" alt="Third slide" height="220">
+						</div>
+						<div class="item">
+							<img src="img/news5.png" alt="Third slide" height="220">
+						</div>
+					</div>
+					<!-- 轮播（Carousel）导航 -->
+					<a class="carousel-control left" href="#myCarousel" 
+					   data-slide="prev">&lsaquo;</a>
+					<a class="carousel-control right" href="#myCarousel" 
+					   data-slide="next">&rsaquo;</a>
+				</div> 
+			</div>
+			<!-- 前台用户登录 -->
+			<div class="col-xs-12 col-sm-3">
+				<div class="panel panel-primary" style="height: 220px;">
+					<div class="panel-heading">
+						<h3 class="panel-title">
+							<span class="glyphicon glyphicon-user"></span>
+							&nbsp;&nbsp;用户登录
+						</h3>
+					</div>
+					<div class="panel panel-body">
+						<form action="" class="form-horizontal" role="form">
+							<p>
+								<input type="text" class="form-control" placeholder="用户名／手机号／邮箱账号">
+							</p>
+							<p>
+								<input type="password" class="form-control" placeholder="密码">
+							</p>
+							<label for="" class="checkbox-inline">
+								<input type="checkbox"/>十天内免登录
+							</label>
+							<input type="button" class="btn btn-success" value="登&nbsp;录"/>
+							<input type="button" class="btn btn-default" value="注&nbsp;册" data-toggle="modal" data-target="#userRegisterModel"/>
+						</form>
+					</div>	
+				</div> 
+			</div>	
+		</div>	
+		<!--定义一行，在此行中定义了3列，列中存放内容-->
+		<div class="row">
+		<!-- 新闻资讯 -->
+			<div class="col-xs-12 col-sm-4">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">
+							<a href="#" style="float: right;">更多..</a>
+							<span class="glyphicon glyphicon-volume-up"></span>
+							&nbsp;&nbsp;通知公告
+						</h3>
+					</div>
+					<ul class="list-group">
+						<li class="list-group-item">
+							<a href="#" target="_blank">泉州师范学院物信学院分光光度计采购项目的成交公告</a>
+						</li>
+						<li class="list-group-item">
+							<a href="#" target="_blank">泉州师范学院化工学院多用气体吸附仪采购的采购公告</a>
+						</li>
+						<li class="list-group-item">
+							<a href="#" target="_blank">泉州师范学院化工学院多用气体吸附仪采购的采购公告</a>
+						</li>
+					 </ul>
+				</div>	
+			</div>
+			<!-- 视频播放 -->
+			<div class="col-xs-12 col-sm-5">
+				<div id="a1"></div>
+				<script type="text/javascript">
+				    var flashvars={
+				        p:0,//默认是否播放，0-暂停，1-自动播放，2-不加载视频
+				        e:1,//e表示播放结束动作，1-循环播放
+				        i:'video/stoplogo.png',
+				    };
+				    var video=['video/v1.flv'];
+				    var support=['all'];
+				    CKobject.embedHTML5('a1','ckplayer_a1','100%',220,video,flashvars,support);
+				</script>
+			</div>
+			<!-- 招生就业列表 -->
+			<div class="col-xs-12 col-sm-3">
+				<div class="panel panel-primary">
+					<ul class="nav nav-tabs" id="tab_ul">
+						<li class="active">
+							<a href="#zsxx" id="zsxx_a" data-toggle="tab">
+							<span class="glyphicon glyphicon-bullhorn"></span>&nbsp;招生信息
+							</a>
+						</li>
+						<li>
+							<a href="#jyxx" id="jyxx_a" data-toggle="tab">
+							<span class="glyphicon glyphicon-briefcase"></span>&nbsp;就业信息
+							</a>
+						</li>
+					</ul>
+					<div class="tab-content">	
+						<div class="tab-pane fade in active" id="zsxx">
+							<a href="#" class="list-group-item">软件工程专业2017招生简章</a>
+							<a href="#" class="list-group-item">软件工程专业2017招生计划分配</a>
+							<a href="#" class="list-group-item">软件工程专业招生录取办法</a>
+							<a href="#" class="list-group-item">软件工程专业招生录取办法</a>
+						</div>
+						<div class="tab-pane fade" id="jyxx">
+							<a href="#" class="list-group-item">软件工程专业17届毕业生就业情况</a>
+							<a href="#" class="list-group-item">毕业3年后薪资最高的几个专业</a>
+							<a href="#" class="list-group-item">2016年中国大学生就业报告发布</a>
+							<a href="#" class="list-group-item">2016年中国大学生就业报告发布</a>	
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>	
+		<!--定义一行，在此行中定义了3列，列中存放内容-->
+		<div class="row">
+			<!-- 图文新闻列表 -->
+			<div class="col-xs-12 col-sm-9">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">
+							<a href="#" style="float: right">更多...</a>
+							<span class="glyphicon glyphicon-picture"></span>&nbsp;&nbsp;校园文化
+						</h3>
+					</div>
+					<div class="panel-body">
+						<div class="media">
+							<a href="#" class="pull-left">
+								<img src="img/img1.jpeg" alt="..." class="media-object img-thumbnail img-response">
+							</a>
+							<div class="media-body">
+								<h4 class="media-heading">
+									<a href="#">泉州师范学院“两学一做”学习教育</a>
+								</h4>
+								<p>办公室 2017-6-15</p>
+								<p>新华社北京3月28日电　近日，中共中央办公厅印发了《关于推进“两学一做”学习教育常态化制度化的意见》，并发出通知，要求各地区各部门认真贯彻落实。</p>
+							</div>
+						</div>
+						<div class="media">
+							<a href="#" class="pull-left">
+								<img src="img/img2.png" alt="..." class="media-object img-thumbnail img-response">
+							</a>
+							<div class="media-body">
+								<h4 class="media-heading">
+									<a href="#">深入落实八项规定 持之以恒纠正“四风”</a>
+								</h4>
+								<p>办公室 2017-6-15</p>
+								<p>新华社北京3月28日电　近日，中共中央办公厅印发了《关于推进“两学一做”学习教育常态化制度化的意见》，并发出通知，要求各地区各部门认真贯彻落实。</p>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 快捷通道 -->
+			<div class="col-xs-12 col-sm-3">
+				<div class="panel panel-primary" id="divChannelLink">
+					<div class="panel-heading">
+						<h3 class="panel-title">
+							<span class="glyphicon glyphicon-hand-right"></span>
+							&nbsp;&nbsp;快捷通道
+						</h3>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+								<a href="#"><img src="img/kjtd/link1.png" alt="" class="img-responsive img-thumbnail"></a>
+							</div>
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+								<a href="#"><img src="img/kjtd/link2.png" alt="" class="img-responsive img-thumbnail"></a>
+							</div>
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+								<a href="#"><img src="img/kjtd/link3.png" alt="" class="img-responsive img-thumbnail"></a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+								<a href="#"><img src="img/kjtd/link4.png" alt="" class="img-responsive img-thumbnail"></a>
+							</div>
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+								<a href="#"><img src="img/kjtd/link5.png" alt="" class="img-responsive img-thumbnail"></a>
+							</div>
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+								<a href="#"><img src="img/kjtd/link6.png" alt="" class="img-responsive img-thumbnail"></a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+								<a href="#"><img src="img/kjtd/link7.png" alt="" class="img-responsive img-thumbnail"></a>
+							</div>
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+								<a href="#"><img src="img/kjtd/link8.png" alt="" class="img-responsive img-thumbnail"></a>
+							</div>
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+								<a href="#"><img src="img/kjtd/link9.png" alt="" class="img-responsive img-thumbnail"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>		
+	</div>
+	<!-- 底部版权信息 -->
+	<footer id="divFooter">
+		<div class="container">
+			<div class="row rowLinkLogo">
+				<div class="col-md-3 col-xs-4 col-sm-3 col-lg-3 leftLink">
+					<ul>
+						<li><a href="#">学院概况</a></li>
+						<li><a href="#">教学教育</a></li>
+						<li><a href="#">科学研究</a></li>
+						<li><a href="#">学生工作</a></li>
+						<li><a href="#">招生就业</a></li>
+						<li><a href="#">专业介绍</a></li>
+					</ul>
+				</div>
+				<div class="col-md-6 col-xs-4 col-sm-6 col-lg-6 centerLogo">
+					<center>
+						<img src="img/logo.png" alt="" class="img-responsive">
+					</center>
+					<p>0595-22796091</p>
+					<br><a href="#">nic@qztc.edu.cn</a>
+				</div>
+				<div class="col-md-3 col-xs-4 col-sm-3 col-lg-3 rightLink">
+					<ul>
+						<li><a href="#">教育部</a></li>
+						<li><a href="#">省教育厅</a></li>
+						<li><a href="#">市教育局</a></li>
+						<li><a href="#">教育在线</a></li>
+						<li><a href="#">心理咨询</a></li>
+						<li><a href="#">精品课程</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="divCopyright">
+			<div class="container">
+				<div class="row">
+				<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
+					<center>
+						地址:福建省泉州市东海大街398号|
+						版权所有&copy;泉州师范学院2014 | 闽ICP备05005468号 | 闽公网安备 35050302000128号
+					</center>
+				</div>
+			</div>
+			</div>
+		</div>
+	</footer>		
+	<!-- 模态弹窗——注册板块 -->
+	<div class="modal fade" id="userRegisterModel" role="dialog" aria-hidden="true" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<input type="button" value="&times;" class="close" data-dismiss="modal" aria-hidden="true">
+					<h4 class="modal-title">
+						用户注册
+					</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="userRegisterText">用户名</div>
+						<div class="userRegisterInput">
+							<input type="text" class="form-control" name="username">
+							<p class="userRegisterNotice">6~18个字符，可使用字母，数字，下划线，需以字母开头</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="userRegisterText">密码</div>
+						<div class="userRegisterInput">
+							<input type="password" class="form-control" name="username">
+							<p class="userRegisterNotice">6~16个字符，区分大小写</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="userRegisterText">确认密码</div>
+						<div class="userRegisterInput">
+							<input type="password" class="form-control" name="username">
+							<p class="userRegisterNotice">请再次填写密码</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="userRegisterText">Email</div>
+						<div class="userRegisterInput">
+							<input type="text" class="form-control" name="username">
+							<p class="userRegisterNotice">Email格式：rjxy@163.com</p>
+						</div>
+					</div>				
+				</div>
+				<div class="modal-footer">
+					<input type="submit" class="btn btn-success" value="立即注册">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

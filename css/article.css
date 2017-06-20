@@ -1,0 +1,67 @@
+#artContent p{
+	text-indent: 2em;
+	font: normal 15px/35px "microsoft yahei";
+}
+#artContent p{/*s设置正文对齐方式为两端对齐，兼容各种主流浏览器*/
+	text-align: justify; 
+	text-justify: distribute-all-lines;/*IE6-IE8*/
+	text-align-last: justify;/*ie9*/
+	-moz-text-align-last: justify;/*firefox*/
+	-webkit-text-align-last: justify;/*chrome20+*/
+}
+.comment{
+	margin:10px;
+	padding: 12px;
+}
+.comment .media{
+	border-bottom: 1px #428BCA dotted;
+}
+.comment img{
+	padding: 3px;
+}
+.comment .media_last{
+	margin-top: 15px;
+	border-bottom: none;
+}
+.comment .media_last .pull-left{
+	padding-right: 10px;
+}
+.comment .media .media-body .media{
+	padding: 10px;
+	border-top:1px #428BCA dotted;
+	border-bottom: none;
+}
+#editor{
+	height: 160px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.cd-top{
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	position: fixed;
+	bottom: 40px;
+	right: 35px;
+	overflow: hidden;
+	text-align: 100%;
+	white-space:nowrap;
+	background: #428BCA url(../img/news/cd-top-arrow.svg) no-repeat center 50%;
+	visibility: hidden;
+	opacity: 0;
+	transition:all 0.3s;
+}
+/*设置链接可见*/
+.cd-is-visible{
+	visibility: visible;
+	opacity: 1;
+}
+.cd-fade-out{
+	opacity: 0.8;
+}
+/*鼠标移动到链接上时的样式*/
+.no-touch .cd-top:hover{
+	background-color: #e86256;
+	opacity: 1;
+}
+

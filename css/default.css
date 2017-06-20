@@ -1,0 +1,115 @@
+*{
+	padding: 0;
+	margin:0;
+}
+li{
+	list-style: none;
+}
+.header{
+	width: 100%;
+	background-color: #337ab7;
+}
+/*body{
+	background-color: #337ab7;
+}*/
+.content{
+	background-color: white;
+}
+#frmSearch{
+
+	margin-right: 30px;
+
+}
+/*用户注册*/
+	/*设置用户注册项左边文字容器的样式*/
+.userRegisterText{
+	display: inline-block;
+	width: 20%;
+	text-align: right;
+	padding-right:5px;
+	font:bold 15px "Microsoft YaHei";
+	vertical-align: top;
+}
+	/*设置用户注册项右边输入框容器的样式*/
+.userRegisterInput{
+	display: inline-block;
+	width: 70%;
+}
+	/*设置用户注册项右边输入提示文字容器的样式*/
+.userRegisterNotice{
+	font:15px "Microsoft YaHei";
+	color: #444444;
+	padding: 8px 0px;
+}
+/*#tab_ul li a:focus{
+	background-color: #337ab7;
+	color: #FFFFFF;
+}*/
+/*图片新闻列表-图片3D旋转特效*/
+.img-thumbnail{
+	-moz-transition:all 2s ease-in-out;
+	-webkit-transition:all 2s ease-in-out;
+	-o-transition:all 2s ease-in-out;
+	-ms-transition:all 2s ease-in-out;
+	transition:all 2s ease-in-out;
+}
+.img-thumbnail:hover{
+	-moz-transform:rotateY(180deg);
+	-webkit-transform:rotateY(180deg);
+	-o-transform:rotateY(180deg);
+	-ms-transform:rotateY(180deg);
+	transform:rotateY(180deg);
+}
+#divChannelLink .col-md-4 img{
+	margin:0 auto;
+	margin-bottom:20px;
+	transform: translateY(0rem);
+	transition: all .25s ease;
+}
+#divChannelLink .col-md-4:hover img{
+	transform: translateY(-1rem);/*设置元素向上移动1rem*/
+}
+#divFooter{
+	background-color: #337ab7;
+	color: white;
+	margin-top: 20px;
+}
+#divFooter .row div{
+	color: #cccacc;
+	font:15px/30px "Microsoft YaHei";
+}
+#divFooter .row a{
+	color: #cccacc;
+}
+#divFooter .row ul{
+	margin:0;
+	padding: 0;
+	list-style: none;
+}
+#divFooter .rowLinkLogo{
+	padding: 30px 0;
+	border-bottom: 1px solid #2b2e32;
+}
+.rowLinkLogo .leftLink{
+	text-align: right;
+	border-right:1px solid #454a51;
+}
+.rowLinkLogo .centerLogo{
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+}
+.rowLinkLogo .rightLink{
+	text-align: left;
+	border-left: 1px solid #454a51;
+}
+.divCopyright{
+	background-color: #2b2e32;
+	border-top: 1px solid #3e4248;
+	padding: 20px 0px;
+	text-align: center;
+}
+.divCopyright center{
+	color: #cccacc;
+	font-weight: bold;
+}
